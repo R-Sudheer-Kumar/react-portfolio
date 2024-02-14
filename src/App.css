@@ -1,38 +1,82 @@
-.App {
-  text-align: center;
+*{
+  box-sizing: border-box;
+  padding:0;
+  margin:0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+::-webkit-scrollbar {
+  width: 6px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+::-webkit-scrollbar-track {
+  background: rgba(71, 49, 10, 0.911);
 }
 
-.App-header {
-  background-color: #282c34;
+
+::-webkit-scrollbar-thumb {
+  background: orange;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: orange;
+}
+.home{
+  background-image: url('./assets/svg-image-1.svg');
+  background-size: cover;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+.typed-cursor{
+  font-weight: 500;
+  font-size: 30px;
+  color: orange ;
+  margin-top: -1px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.home-img
+{
+  height:450px;
+}
+
+.highlight{
+  color: orange;
+  font-weight: bold;
+}
+
+
+tr ,td 
+{
+  padding:10px;
+}
+.contactImg
+{
+  width:50px;
+}
+.contactImglocation
+{
+  width:50px;
+}
+
+@media (max-width:600){
+  .pdfembed{
+    width: 50px;
   }
 }
+
+@media (max-width : 450px) {
+  .home-img{
+    height:330px;
+  }
+  .contactImg
+  {
+    width:30px;
+  }
+  .contactImglocation
+  {
+    width:40px;
+  }
+}
+
