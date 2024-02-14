@@ -61,6 +61,7 @@ function Navbar() {
             src={logo}
             width="70px"
             height="70px"
+            alt='logo'
             style={{ marginRight: "30px" }}
           />
 
@@ -102,7 +103,7 @@ function Navbar() {
                     },
                   }}
                   component={NavLink}
-                  to={name == "Home" ? "/" : name}
+                  to={name === "Home" ? "/" : name}
                   style={({ isActive }) => ({
                     color: isActive ? "orange" : "white",
                   })}
@@ -155,7 +156,7 @@ function Navbar() {
                     },
                   }}
                   component={NavLink}
-                  to={name == "Home" ? "/" : name}
+                  to={name === "Home" ? "/" : name}
                   onClick={()=> setOpen(false)}
                   style={({ isActive }) => ({
                     color: isActive ? "orange" : "white",

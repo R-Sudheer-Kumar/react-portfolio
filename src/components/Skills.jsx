@@ -36,7 +36,7 @@ function Skills() {
           justifyContent: "center",
           alignItems:'center',
           display: "flex",
-          padding: "40px 70px 30px 70px",
+          padding: '30px 40px 20px 40px'
         }}
         flexDirection='column'
       > 
@@ -45,7 +45,7 @@ function Skills() {
           container
           sx={{ padding: "20px 10px", margin: "0px 50px" }}
           justifyContent="space-evenly"
-          width='1100px'
+          maxWidth='1100px'
         >
           {skills.map((skill) => {
             return (

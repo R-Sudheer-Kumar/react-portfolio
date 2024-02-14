@@ -39,7 +39,7 @@ function Education() {
   }}
         >
         <Typography variant='h4' textAlign='center' sx={{color:'white' , fontWeight:'600' , padding:"15px 0" , fontSize:"38px"}}>Education <span className='highlight'>Qualifications</span> </Typography>
-            <Grid container color='white' justifyContent='space-around' width='1200px' >
+            <Grid container color='white' justifyContent='space-around' maxWidth='1200px' >
                 <Grid item> 
                 <Stack>
               {

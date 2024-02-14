@@ -8,7 +8,6 @@ import Typography from "@mui/material/Typography";
 import { Grid, Stack } from "@mui/material";
 import { GrShare } from "react-icons/gr";
 import { FaGithub } from "react-icons/fa";
-import { FaArrowRightLong } from "react-icons/fa6";
 
 const style = {
   position: "absolute",
@@ -56,7 +55,7 @@ function ProjectView({ open, onClose, data }) {
             >
               {data.title}
             </Typography>
-            <img src={data.image} width='100%' />
+            <img src={data.image} alt='title' width='100%' />
             <Stack paddingTop="10px" spacing={0.5}>
               <Typography variant="h5" sx={{ fontWeight: "600" }}>
                 Description

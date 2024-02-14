@@ -14,6 +14,7 @@ function HomeMe() {
         display: "flex",
         alignItems: "center",
         marginBottom: "100px",
+        marginTop:{xs:'30px',md:'10px'}
       }}
     >
       <Grid container justifyContent="space-around" width="1300px">
