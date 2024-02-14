@@ -7,22 +7,23 @@ import {Link} from 'react-router-dom';
 function HomeMe() {
   return (
     <Box
-      height="600px"
+      minHeight="600px"
       color="white"
       justifyContent="center"
       sx={{
         display: "flex",
         alignItems: "center",
-        marginBottom: "100px",
-        marginTop:{xs:'30px',md:'10px'}
+        justifyContent:'center',
+        marginBottom: "50px",
       }}
     >
       <Grid container justifyContent="space-around" width="1300px">
         <Grid item>
           <Stack
             direction="column"
-            alignItems="start"
-            justifyContent="space-around"
+            alignItems="center"
+            justifyContent="center"
+            alignSelf='center'
             sx={{ marginTop: "40px" , padding:{xs:'0 30px' ,md:'0 0 0 20px' , lg:'0'}}}
             spacing={2}
             maxWidth="600px"

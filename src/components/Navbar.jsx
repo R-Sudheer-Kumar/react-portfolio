@@ -40,7 +40,7 @@ function Navbar() {
       <AppBar
       
         sx={{
-          backgroundColor: navPosition ? "rgb(31,30,51)" : "transparent",
+          backgroundColor:{xs:'rgb(31,30,51)' , md:navPosition ? "rgb(31,30,51)" : "transparent"},
           padding: "0 0px",
           position:(navPosition?'sticky':'block'),
           
@@ -120,7 +120,7 @@ function Navbar() {
         <Stack
             direction="column"
 
-            spacing={{ sm: 3, md: 4, lg: 6 }}
+            spacing={{xs:3, sm: 3, md: 4, lg: 6 }}
             sx={{
                 position:'absolute',
                 width:'100%',
@@ -128,7 +128,7 @@ function Navbar() {
                 top:(!open ? '-500px' : '70px'),
               display: { xs: "flex", md: "none" },
               transition: "height 0.5s ease , top 0.5s ease",
-              backgroundColor: navPosition ? 'rgb(31,30,51)' : 'transparent',
+              backgroundColor:'rgb(31,30,51)',
               zIndex:'-1',       
               padding:'0 0 20px 0'         
             }}

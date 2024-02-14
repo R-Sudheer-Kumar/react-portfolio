@@ -56,9 +56,9 @@ function Home() {
     <Spaces />
     <Typography variant='h4' sx={{color:'white' , fontWeight:'600' , textAlign:'center' , padding:'45px 0 20px 0'}}>Some of my <span className='highlight'>projects</span> </Typography>
     <ProjectList status={["important"]} />
-    <Button variant='contained' color='success' sx={{margin:'10px' , marginLeft:'45%'}}
+    <Button variant='contained' color='success' sx={{margin:'10px' , marginLeft:{xs:'25%' , sm:'35%' , md:'45%'} }}
         component={Link} to='/projects'
-    ><Typography sx={{fontSize:'16px',color:'white' , fontWeight:'600' , textAlign:'center' , padding:'5px'}}> View all projects </Typography></Button> 
+    ><Typography sx={{fontSize:{xs:'14px', md:'16px'},color:'white' , fontWeight:'600', padding:'3px'}}> View all projects </Typography></Button> 
     
     </>
   );
