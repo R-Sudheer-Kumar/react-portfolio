@@ -12,19 +12,19 @@ import { SiMui } from "react-icons/si";
 
 function Skills() {
   const skills = [
-    <TbLetterC size='100px' color='rgb(89,4,250)' />,
-    <FaPython size="100px" color='rgb(247,201,60)' />,
-    <FaJava size="100px" color='blue' />,
-    <FaReact size="100px"  color='rgb(0,216,255)'/>,
-    <FaAngular size="100px" color='rgb(190,0,46)' />,
-    <SiFlask size="100px" color='black' />,
-    <FaHtml5 size="100px" color='rgb(233,98,40)' />,
-    <FaCss3 size="100px" color='rgb(51,164,212)' />,
-    <FaJs size="100px" color='rgb(213,142,11)' />,
-    <SiMui size='100px' color='rgb(12,133,255)' />,
-    <FaBootstrap size='100px' color='rgb(121,16,242)' />,
-    <SiFirebase size="100px" color='rgb(213,142,11)' />,
-    <SiMysql size="100px" color='rgb(66,117,156)' />,
+    <TbLetterC size='70px' color='rgb(89,4,250)' />,
+    <FaPython size="70px" color='rgb(247,201,60)' />,
+    <FaJava size="70px" color='blue' />,
+    <FaReact size="70px"  color='rgb(0,216,255)'/>,
+    <FaAngular size="70px" color='rgb(190,0,46)' />,
+    <SiFlask size="70px" color='black' />,
+    <FaHtml5 size="70px" color='rgb(233,98,40)' />,
+    <FaCss3 size="70px" color='rgb(51,164,212)' />,
+    <FaJs size="70px" color='rgb(213,142,11)' />,
+    <SiMui size='70px' color='rgb(12,133,255)' />,
+    <FaBootstrap size='70px' color='rgb(121,16,242)' />,
+    <SiFirebase size="70px" color='rgb(213,142,11)' />,
+    <SiMysql size="70px" color='rgb(66,117,156)' />,
     
   ];
   return (
@@ -36,16 +36,17 @@ function Skills() {
           justifyContent: "center",
           alignItems:'center',
           display: "flex",
-          padding: '30px 40px 20px 40px'
+          padding: {xs:'25px 0 0 0' , md:'30px 40px 20px 40px'},
+        
         }}
         flexDirection='column'
       > 
-        <Typography variant='h3' sx={{fontWeight:'600' , paddingBottom:'30px' }}>Technical <span className="highlight">Skills</span></Typography>
+        <Typography variant='h3' sx={{fontWeight:'600' , paddingBottom:'30px' ,  fontSize:{xs:'35px',sm:'40px',md:'45px'} }}>Technical <span className="highlight">Skills</span></Typography>
         <Grid
           container
-          sx={{ padding: "20px 10px", margin: "0px 50px" }}
+          sx={{ padding: "20px 10px", margin: "0px 0px" }}
           justifyContent="space-evenly"
-          maxWidth='1100px'
+          maxWidth='1200px'
         >
           {skills.map((skill) => {
             return (
@@ -53,7 +54,7 @@ function Skills() {
                 item
                 sx={{
                   border: 3,
-                  height: "150px",
+                  height: "110px",
                   borderRadius: "20px",
                   margin: "20px 20px",
                   padding: "20px",
